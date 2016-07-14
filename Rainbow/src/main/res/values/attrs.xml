@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Rainbow">
+        <attr name="multicolor" format="boolean" />
+        <attr name="selectedColor" format="color" />
+        <attr name="cursor" format="integer" />
+        <attr name="arcWidth" format="dimension"/>
+        <attr name="arcHeight" format="dimension"/>
+        <attr name="arcStrokeWidth" format="dimension" />
+    </declare-styleable>
+</resources>
