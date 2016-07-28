@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "0.0.2"
     }
     buildTypes {
         release {
@@ -18,7 +18,7 @@ android {
     }
 
     group = 'com.cocorporation.rainbow'
-    version = '0.0.1'
+    version = '0.0.2'
 }
 
 dependencies {
@@ -53,17 +53,21 @@ artifacts {
 }
 
 bintray {
-    user = 'corelema'
-    key = '19849aeff47a17ce29fd11e0e1cf3f7dfdb49e99'
+    user = System.getenv('BINTRAY_USER')
+    key = System.getenv('BINTRAY_KEY')
+
+    println user
+    println key
+
     pkg {
         repo = 'maven'
         name = 'com.cocorporation.rainbow'
 
         version {
-            name = '0.0.1-init'
-            desc = 'Initialization'
+            name = '0.0.2'
+            desc = 'Custom view added.'
             released  = new Date()
-            vcsTag = '0.0.1'
+            vcsTag = '0.0.2'
         }
 
         licenses = ['Apache-2.0']
